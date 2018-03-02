@@ -1,0 +1,9 @@
+<% result.forEach(function(item){ %>
+<tr>
+    <td><%=item.date%></td>
+    <td><a href="/public/bugs/<%=item.name%>"><%=item.title%></a></td>
+    <td><span id="wooyun-type"><%=item.type%></span></td>
+    <td><span id="wooyun-author"><%=item.author%></span></td>
+</tr>
+<% }) %>
+<input type="hidden" id="count-input" value="<%=count%>">           
